@@ -1,5 +1,9 @@
 package com.duch.service;
 
+import com.duch.pojo.Animal;
+
+import java.util.List;
+
 /**
  * @author duch
  * @description 针对表【animal(动物表)】的数据库操作Service
@@ -7,4 +11,7 @@ package com.duch.service;
  */
 public interface AnimalService {
 
+    List<Animal> getAllAnimal();
+
+    List<Animal> getYesOrNoAdoptAnimal(Integer adopt);
 }

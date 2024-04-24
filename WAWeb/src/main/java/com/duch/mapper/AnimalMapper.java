@@ -1,6 +1,10 @@
 package com.duch.mapper;
 
+import com.duch.pojo.Animal;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 /**
  * @author duch
@@ -12,6 +16,9 @@ import org.apache.ibatis.annotations.Mapper;
 @Mapper
 public interface AnimalMapper {
 
+    List<Animal> getAllAnimal();
+
+    List<Animal> getYesOrNoAdoptAnimal(@Param("adopt") Integer adopt);
 }
 
 

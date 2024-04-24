@@ -5,4 +5,12 @@
 <mapper namespace="com.duch.mapper.AnimalMapper">
 
 
+    <select id="getAllAnimal" resultType="com.duch.pojo.Animal">
+        select * from animal;
+    </select>
+    <select id="getYesOrNoAdoptAnimal" resultType="com.duch.pojo.Animal">
+        select *
+        from animal
+        where adopt = #{adopt}
+    </select>
 </mapper>

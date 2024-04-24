@@ -14,7 +14,7 @@ spring:
     #驱动类名称
     driver-class-name: com.mysql.cj.jdbc.Driver
     #数据库链接地址
-    url: jdbc:mysql://localhost:3306/
+    url: jdbc:mysql://localhost:3306/waweb
     #连接数据库用户名
     username: root
     #连接数据库密码
