@@ -1,0 +1,7 @@
+#下面这些内容是为了让MyBatis映射
+mybatis:
+  #指定Mybatis的Mapper文件
+  mapper-locations: classpath:mappers/*xml
+  #指定Mybatis的实体目录
+  type-aliases-package: com.duch.mybatis.entity
+
